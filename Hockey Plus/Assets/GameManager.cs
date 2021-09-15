@@ -63,9 +63,9 @@ public sealed class GameManager : MonoBehaviour {
         RoundPoints[player] += 1;
         pointsChanged();
         remainingBalls -= 1;
-        if (remainingBalls == 0 || RoundPoints[0] > numberOfBalls / 2 || RoundPoints[1] > numberOfBalls / 2) {
+        //if (remainingBalls == 0 || RoundPoints[0] > numberOfBalls / 2 || RoundPoints[1] > numberOfBalls / 2) {
             EndRound();
-        }
+        //}
     }
 
     void EndRound() {
